@@ -9,7 +9,7 @@ function App() {
 	useEffect(() => {
 		(async () => {
 			try {
-				let toons = await axios.get("http://localhost:7071/api/toons");
+				let toons = await axios.get("/api/toons");
 				setToons(toons.data);
 			} catch (e) {
 				console.log(e);
